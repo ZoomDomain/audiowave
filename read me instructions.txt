@@ -1,0 +1,12 @@
+Run the unity file
+The .js code will upload an mp3 file into the graphics card. 10mb is 1 minute of audio. 
+the graphics card will display the audio file as per the graphing positions in the shader. 
+you can re-code and position the x/y offset and zoom value in the shader only, else add some variables to adjust from cs/js. 
+
+The shader does not resize the audio graph when you change the screen size, it is 768 pixels long on any sized screen. you have to include a screen res. multiplier into the shader for that. 
+
+The color is at the end of the shader, i.e. .8.8.8 is white. 
+
+the skipn value of the shader zooms by telling the shader to graph every 20th audio bit or every 50th etc. 
+
+the three buffer lists in the shader are: a vertex , every of the audio file is a vertex line.... the audio bit amplitudes... the audio bit positions? something? from 4 years ago. 
